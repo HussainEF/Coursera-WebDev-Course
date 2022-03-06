@@ -1,55 +1,70 @@
 *{
 	box-sizing: border-box;
 }
-.container{
-	display: inline-block;
+body{
+	color: black;
 }
 
-.main{	
-	height: 100%;
-	padding: 10px;
+.navbar-default .navbar-brand{
+	color: black;
+	margin: 15px;
 }
 
-.title-chicken{
-	border: 1px solid black;
-	background-color: pink;
-	width: 33%;
-	height: 10%;
-	font-size: 20px;
-	position: relative;
-	top: 0;
-	right: -67%;
-	text-align: center;
+.navbar-default{
+	background-color: #a09c9c;
+	color: black;
+	border-color: black;
+	border-width: 2px;
+	border-radius: 0;
+}
+
+.navbar-brand{
+	font-size: 38px;
+	font-weight: bold;
+}
+
+.navbar-default .navbar-toggle{
+	border-color: black;
+	padding-top: 0;
+	padding-bottom: 0;
+	padding-left: 5px;
+	padding-right: 5px;
+	height: 50px;
+	width: 52px;
+	margin: 15px;
+
+}
+
+.navbar-default .navbar-toggle .icon-bar{
+	background-color: black;
+	height: 5px;
+	width: 40px;
+}
+
+.navbar-default .navbar-nav .menue{
+	font-size: 18px;
+	color: black;
+}
+
+.line{
+	border-color: black;
+	border-width: 2px;
 	margin: 0;
 }
-.title-beef{
-	border: 1px solid black;
-	background-color: red;
-	width: 33%;
-	height: 10%;
+
+.title{
 	font-size: 20px;
-	position: relative;
-	top: 0;
-	right: -67%;
 	text-align: center;
 	margin: 0;
+	font-weight: bold;
 }
-.title-sushi{
-	border: 1px solid black;
-	background-color: blueviolet;
-	width: 33%;
-	height: 10%;
-	font-size: 20px;
-	position: relative;
-	top: 0;
-	right: -67%;
-	text-align: center;
-	margin: 0;
-}
+
 .box{
 	border: 1px solid black;
-	background-color: gray;
-	margin: 0;
+	background-color: #a09c9c;
+	width: 100%;
+	margin: 10px;
+	height: 850px;
 }
 p#text{
 	text-align: justify;
@@ -61,6 +76,7 @@ p#text{
 
 h1{
 	text-align: center;
+	font-weight: bold;
 }
 
 
@@ -70,9 +86,6 @@ h1{
 
 /********** Large devices only **********/
 @media (min-width: 992px){
-	.container{
-		display: inline-block;
-	}
 	.col-lg-1, .col-lg-2, .col-lg-3,
 	.col-lg-4, .col-lg-5, .col-lg-6, 
 	.col-lg-7, .col-lg-8, .col-lg-9,
@@ -118,6 +131,9 @@ h1{
 }
 /********** Medium devices only **********/
 @media (min-width: 768px) and (max-width: 991px){
+	.visible-xs{
+		display: none;
+	}
 	.col-md-1, .col-md-2, .col-md-3,
 	.col-md-4, .col-md-5, .col-md-6,
 	.col-md-7, .col-md-8, .col-md-9,
@@ -164,6 +180,11 @@ h1{
 
 /********** Small devices only **********/
 @media (max-width: 767px){
+	.navbar-default .navbar-collapse{
+	background-color: white;
+	text-align: center;
+	border: 2px solid black;
+	}
 	.col-sm-1, .col-sm-2, .col-sm-3,
 	.col-sm-4, .col-sm-5, .col-sm-6,
 	.col-sm-7, .col-sm-8, .col-sm-9,
